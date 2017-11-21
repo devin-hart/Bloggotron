@@ -1,18 +1,33 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<div id="grid-template">
+  <div id="grid-1">grid-1
+    <p>
+      <% if @article.user_id %>
+        <strong><%= User.find(@article.user_id).email %>:</strong>
+          <% end %>
+      <%= @article.title %>
+    </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+    <div id="subgrid-1">subgrid-1
+      <p>
+        <strong>Text:</strong>
+        <%= @article.text %>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+      </p>
+    </div>
+  </div>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+  <div id="grid-2">grid-2
+    <h2>Comments</h2>
+
+
+    <div id="subgrid-3">subgrid-2
+      <%= render @article.comments %>
+
+        <h2>Add a comment:</h2>
+        <%= render 'comments/form' %>
+    </div>
+  </div>
+</div>
 
 
 <%= link_to 'Edit', edit_article_path(@article) %> |

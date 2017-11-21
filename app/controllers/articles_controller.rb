@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+
   end
 
   def new
@@ -14,11 +15,15 @@ class ArticlesController < ApplicationController
 
   def edit
     @article = Article.find(params[:id])
+    if current_user.id != @article.user_id
+      redirect_to articles_path, notice: "You can't just go and edit another user's post."
+    end
+
   end
 
   def create
     @article = Article.new(article_params)
-
+    @article.user_id = current_user.id
     if @article.save
       redirect_to @article
     else

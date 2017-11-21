@@ -11,3 +11,42 @@
   color: white;
   text-decoration: none;
 }
+
+#nav-bar {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: gray;
+}
+
+#grid-template {
+  display: grid;
+}
+
+#grid-1 {
+  background-color: red;
+}
+
+#grid-2 {
+  background-color: blue;
+}
+
+#subgrid-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: yellow;
+  margin: 10px;
+}
+
+#subgrid-2 {
+  background-color: green;
+  margin: 10px;
+}
+
+#subgrid-3 {
+  display: grid;
+  background-color: orange;
+  margin: 10px;
+}
