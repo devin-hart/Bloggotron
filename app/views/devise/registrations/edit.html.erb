@@ -1,8 +1,8 @@
 <div id="grid-template">
-  <div id="grid-1">grid-1
+  <div id="grid-1">
     <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-    <div id="subgrid-1">subgrid-1
+    <div id="subgrid-1">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
@@ -40,10 +40,10 @@
 <% end %></div>
   </div>
 
-  <div id="grid-2">grid-2
-    <h3>Cancel my account</h3>
-    <div id="subgrid-3">subgrid-2
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+  <div id="grid-2">
+    <h3>Delete Account</h3>
+    <div id="subgrid-3">
+    <%= button_to "Delete Account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
 
 <%= link_to "Back", :back %></div>
   </div>

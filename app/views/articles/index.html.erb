@@ -1,24 +1,27 @@
 <div id="grid-template">
   <div id="grid-1">
     <h1>Blogs</h1>
+    <br>
     <%= link_to 'New Blog', new_article_path %>
 
     <div id="subgrid-1">
-      <table>
-        <tr>
-          <th>Blog Title</th>
-          <th colspan="2"></th>
-        </tr>
+      <h2>Blog Title</h2>
+
+      <br>
 
         <% @articles.each do |article| %>
-          <tr>
-            <td><%= link_to article.title, article_path(article) %></td>
+          <ul style="list-style: none;">
+            <li><%= link_to article.title, article_path(article) %>
+
+            </li>
             <% if current_user.id == article.user_id %>
-            <td><%= link_to 'Edit', edit_article_path(article) %></td>
-            <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <div id="edit_destroy">
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
             <% end %>
-          </tr>
+            <br>
+          </ul>
         <% end %>
-      </table>
     </div>
   </div>

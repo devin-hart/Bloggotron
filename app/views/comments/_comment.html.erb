@@ -1,12 +1,12 @@
 <p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
+  <strong><%= comment.commenter %></strong>
 </p>
 
-<p>
-  <strong>Comment:</strong>
+<p style="margin-left: 46px">
   <%= comment.body %>
 </p>
+
+<br>
 
 <p>
   <% if current_user.id == comment.id %>
