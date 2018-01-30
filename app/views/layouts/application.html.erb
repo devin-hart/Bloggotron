@@ -10,6 +10,7 @@
 
   <body>
     <div id="nav-bar">
+      <%= image_tag('bloggotron_logo.png')  %>
     <p class="navbar-text pull-right">
       <% if user_signed_in? %>
         Logged in as: <%= current_user.email %>
