@@ -1,6 +1,6 @@
 # Bloggotron
 
-![](https://github.com/devin-hart/Bloggotron/blob/master/app/assets/images/bloggtron_blog.png =300x281)
+<img src="https://github.com/devin-hart/Bloggotron/blob/master/app/assets/images/bloggtron_blog.png" alt="Drawing" style="width: 300px; height= 281;"/>
 
 A Ruby on Rails blog app.
 
