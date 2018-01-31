@@ -1,6 +1,6 @@
 # Bloggotron
 
-![](/app/assets/images/bloggotron_blog.png)
+![](https://github.com/devin-hart/Bloggotron/blob/master/app/assets/images/bloggtron_blog.png)
 
 A Ruby on Rails blog app.
 
