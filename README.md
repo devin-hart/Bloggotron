@@ -1,25 +1,31 @@
-# README
+# Bloggotron
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+!()
 
-Things you may want to cover:
+A Ruby on Rails blog app.
 
-* Ruby version
+## Setup
 
-* System dependencies
+Requires Ruby and Rails
 
-* Configuration
+Open your terminal and type:
 
-* Database creation
+* `git clone https://github.com/devin-hart/Bloggotron.git`
 
-* Database initialization
+* `cd bloggotron`
 
-* How to run the test suite
+* `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+* `rails db:migrate`
 
-* Deployment instructions
+* `rails s`
 
-* ...
-# rails_blog
+In your browser go to:
+
+* `http://localhost:3000`
+
+## Bloggotron
+
+Sign up, log in, write a blog and comment on blogs.
+
+Bloggotron is fun!
