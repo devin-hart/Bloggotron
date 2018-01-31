@@ -1,6 +1,6 @@
 # Bloggotron
 
-!()
+![](/app/assets/images/bloggotron_blog.png)
 
 A Ruby on Rails blog app.
 
